@@ -1,16 +1,11 @@
 # testesJasmine
 Repositório de testes automatizados com Jasmine Framework, Curso Técnico Senai Desenvolvimento Web de Sistemas
 
-Na aula de hoje aprendemos a fazer upload de arquivos, projetos, trabalhos para o GitHub
-
-##Imagem Anagram.js
-![image](https://user-images.githubusercontent.com/82132994/158916237-8c46565d-8ef8-4630-977c-42169805ab52.png)
-
-##Imagem Hello.js
-![image](https://user-images.githubusercontent.com/82132994/158916269-9b880fd5-0636-4fb6-a797-a32f818df21c.png)
-
-##Imagem Anagram-spec.js
-![image](https://user-images.githubusercontent.com/82132994/158916319-6b690eca-d0ec-4f9b-8688-b35d02961cd4.png)
-
-##Imagem Hello-spec.js
-![image](https://user-images.githubusercontent.com/82132994/158916350-e1925644-0dd3-40bb-83ea-8cea828925d7.png)
+aqui é a imagem que busca a verificação que as strngs que são iguais, frente e traz.
+![Capturar](https://user-images.githubusercontent.com/101840378/158916342-1baa994e-9792-47b6-bbdb-71a375b0bb5b.PNG)
+aqui monstrar a função hello world!
+![Capturar1](https://user-images.githubusercontent.com/101840378/158916791-9d091dd9-3444-457a-926d-1a75780641d7.PNG)
+essa função verificando que as palavras são iguais para traz e frente, são vazio, número igual para frente e para traz, numeros com ou sem numeros, é falso quando 012 não é igual a 102
+![Capturar3](https://user-images.githubusercontent.com/101840378/158917018-8cee8bc4-f8b6-4588-88ef-23c567b3d229.PNG)
+é um teste que é esperado que seja "helo world"
+![Capturar4](https://user-images.githubusercontent.com/101840378/158917538-c00b1adb-3e2a-4831-bdf4-21812bd4378f.PNG)

@@ -181,7 +181,100 @@ describe("Suíte de testes do tópico 5.13", function () {
             .toThrowError(TypeError,"O número deve ser maior que 0.");
         expect(calcularDobro).not.toThrowError();
 
-    })
-})
+    });
+});
+
+describe ("Testa a função 'fall' de falha manual",function(){
+    var operacao = function (deveExecutar, callBack) {
+        if (deveExecutar){
+            callBack();
+        }
+    };
+    it ("Não deve executar a função callBack", function(){
+        operacao(false, function(){
+            fail("Função de callBack foi executada");
+
+        });
+    });
+});
+
+describe("Suíte de testes do beforeEach", function() {
+    var contador = 0;
+    beforeEach(function() {
+        contador++;
+    });
+    it ("deve exibir o contador com valor 1", function(){
+        expect(contador).toEqual(1);
+});
+it("deve exibir o contador com valor 2",function() {
+    expect(contador).toEqual(2);
+});
+});
+
+describe("Suíte de testes do afterEach", function() {
+    var contador = 0;
+    beforeEach(function() {
+        contador++;
+    });
+    var contador = 0;
+    afterEach(function() {
+        contador =0;
+    });
+    it ("deve exibir o contador com valor 1", function(){
+        expect(contador).toEqual(1);
+});
+it("deve exibir o contador com valor 1",function() {
+    expect(contador).toEqual(1);
+});
+});
+
+describe("Suíte de testes do BeforeAll", function() {
+    var contador;
+    beforeAll(function() {
+        contador = 10;
+    });
+    beforeEach(function() {
+        contador ++;
+    });
+    it ("deve exibir o contador com valor 1", function(){
+        expect(contador).toEqual(11);
+});
+it("deve exibir o contador com valor 1",function() {
+    expect(contador).toEqual(12);
+});
+});
+
+describe("Suíte de testes do AfterAll", function() {
+    var contador;
+    beforeAll(function() {
+        contador = 10;
+    });
+    afterAll(function() {
+        contador = 0;
+    });
+    it ("deve exibir o contador com valor 10", function(){
+        expect(contador).toEqual(10);
+});
+it("deve exibir o contador com valor 10",function() {
+    expect(contador).toEqual(10);
+});
+});
+
+describe("Suíte de testes do aninhando", function() {
+    var contadorExterno = 0;
+    beforeEach(function() {
+        contadorExterno++;
+    });
+    beforeEach(function() {
+        contador ++;
+    });
+    it ("deve ter incrementado o contador externo para 1", function(){
+        expect(contadorExterno).toEqual(1);
+});
+it("deve conter o valor '2' para ambos contadores",function() {
+    expect(contadorInterno).toEqual(contadorExterno);
+});
+});
+
 
 
